@@ -29,11 +29,20 @@ void render() {
 
     setCurrentColor(WHITE);
     std::vector<Vertex2> points = {
-            {377, 249}, {411, 197}, {436, 249}
+            {413, 177}, {448, 159}, {502, 88}, {553, 53}, {535, 36}, {676, 37}, {660, 52},
+            {750, 145}, {761, 179}, {672, 192}, {659, 214}, {615, 214}, {632, 230}, {580, 230},
+            {597, 215}, {552, 214}, {517, 144}, {466, 180}
     };
-    Color fillColor = {0, 0, 255};
+    std::vector<Vertex2> point2 = {
+            {682, 175}, {708, 120}, {735, 148}, {739, 170}
+    };
+
+
+    Color fillColor = {0, 255, 0};
     Color lineColor = {255, 255, 255};
     drawPolygon(points,lineColor);
+    fillPolygon(points, lineColor, clearColor,fillColor );
+    drawPolygon(point2,lineColor);
     fillPolygon(points, lineColor, fillColor, clearColor);
 
     renderBuffer();
