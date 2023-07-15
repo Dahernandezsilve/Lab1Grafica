@@ -2,4 +2,4 @@
 #include "framebuffer.h"
 
 // Función para dibujar un punto en la pantalla en las coordenadas especificadas
-void point(const Vertex2& vertex);
+void point(const Vertex2& vertex,  const Color& color);

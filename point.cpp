@@ -3,7 +3,7 @@
 //
 
 #include "point.h"
-void point(const Vertex2& vertex) {
+void point(const Vertex2& vertex,  const Color& color) {
     // Obtener las coordenadas enteras del vértice
     int x = static_cast<int>(vertex.x);
     int y = static_cast<int>(vertex.y);
@@ -13,6 +13,6 @@ void point(const Vertex2& vertex) {
         // Calcular el índice correspondiente en el framebuffe
 
         // Establecer el color actual en el punto del framebuffer
-        framebuffer[y][x] = currentColor;
+        framebuffer[y][x] = color;
     }
 }

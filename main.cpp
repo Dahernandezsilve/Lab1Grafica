@@ -35,7 +35,9 @@ void render() {
     vertices.emplace_back(150, 250);
     vertices.emplace_back(100, 200);
 
-    fillPolygon(vertices);
+    Color fillColor = {255, 0, 0};
+    Color lineColor = {0, 0, 255};
+    fillPolygon(vertices, fillColor, lineColor);
 
     renderBuffer();
 }

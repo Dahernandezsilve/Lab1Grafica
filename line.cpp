@@ -2,7 +2,7 @@
 #include "point.h"
 #include <cmath>
 
-void line(const Vertex2& start, const Vertex2& end) {
+void line(const Vertex2& start, const Vertex2& end,  const Color& color) {
     // Convertir las coordenadas decimales en enteros
     int x0 = static_cast<int>(start.x);
     int y0 = static_cast<int>(start.y);
@@ -26,7 +26,7 @@ void line(const Vertex2& start, const Vertex2& end) {
         Vertex2 currentPoint(static_cast<float>(x0), static_cast<float>(y0));
 
         // Dibujar el punto actual
-        point(currentPoint);
+        point(currentPoint, color);
 
         // Verificar si se alcanzó el punto final
         if (x0 == x1 && y0 == y1) {

@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/daher/CLionProjects/Lab1Graficas/cmake-build-debug",
-		"source" : "C:/Users/daher/CLionProjects/Lab1Graficas"
+		"build" : "C:/Users/daher/Documents/GitHub/Lab1Grafica/cmake-build-debug",
+		"source" : "C:/Users/daher/Documents/GitHub/Lab1Grafica"
 	},
 	"version" : 
 	{
