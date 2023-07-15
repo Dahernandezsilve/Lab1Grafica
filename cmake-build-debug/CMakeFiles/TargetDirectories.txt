@@ -1,3 +1,0 @@
-C:/Users/daher/Documents/GitHub/Lab1Grafica/cmake-build-debug/CMakeFiles/Lab1Graficas.dir
-C:/Users/daher/Documents/GitHub/Lab1Grafica/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/daher/Documents/GitHub/Lab1Grafica/cmake-build-debug/CMakeFiles/rebuild_cache.dir
