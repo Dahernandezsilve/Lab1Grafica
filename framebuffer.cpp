@@ -17,7 +17,7 @@ void clear() {
 }
 
 void renderBuffer() {
-    std::ofstream file("out.bmp", std::ios::binary);
+    std::ofstream file("../out.bmp", std::ios::binary);
 
     // Encabezado del archivo BMP
     unsigned int fileSize = sizeof(Color) * framebufferWidth * framebufferHeight + 54;
