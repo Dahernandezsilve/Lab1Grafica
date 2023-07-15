@@ -5,4 +5,4 @@
 #include "point.h"
 
 // Función para rellenar un polígono definido por un array de vértices
-void fillPolygon(const std::vector<Vertex2>& vertices,  const Color& fillColor, const Color& lineColor);
+void fillPolygon(const std::vector<Vertex2>& points, Color contourColor, Color fillColor, Color colorBackground);

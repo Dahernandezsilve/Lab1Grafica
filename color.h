@@ -16,6 +16,16 @@ public:
     }
     Color(): r(0), g(0), b(0) {}
 
+    // Operador de igualdad (override del operador ==)
+    bool operator==(const Color& other) const {
+        return (r == other.r) && (g == other.g) && (b == other.b);
+    }
+
+    // Operador de desigualdad (override del operador !=)
+    bool operator!=(const Color& other) const {
+        return !(*this == other);
+    }
+
     // Operador de impresión (override del operador <<)
     friend std::ostream& operator<<(std::ostream& os, const Color& color) {
         os << "RGB(" << static_cast<int>(color.r) << ", " << static_cast<int>(color.g) << ", " << static_cast<int>(color.b) << ")";

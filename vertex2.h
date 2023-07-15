@@ -10,4 +10,5 @@ struct Vertex2 {
     float y;
 
     Vertex2(float _x, float _y) : x(_x), y(_y) {}
+    Vertex2(): x(0), y(0) {}
 };

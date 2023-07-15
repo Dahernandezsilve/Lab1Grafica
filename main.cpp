@@ -28,19 +28,19 @@ void render() {
     clear();
 
     setCurrentColor(WHITE);
-    std::vector<Vertex2> vertices;
-    vertices.emplace_back(100, 100);
-    vertices.emplace_back(200, 100);
-    vertices.emplace_back(200, 200);
-    vertices.emplace_back(150, 250);
-    vertices.emplace_back(100, 200);
+    std::vector<Vertex2> points = {
+            {413, 177}, {448, 159}, {502, 88}, {553, 53}, {535, 36}, {676, 37}, {660, 52},
+            {750, 145}, {761, 179}, {672, 192}, {659, 214}, {615, 214}, {632, 230}, {580, 230},
+            {597, 215}, {552, 214}, {517, 144}, {466, 180}
+    };
 
     Color fillColor = {255, 0, 0};
     Color lineColor = {0, 0, 255};
-    fillPolygon(vertices, fillColor, lineColor);
+    drawPolygon(points,lineColor);
+    fillPolygon(points, lineColor, fillColor, clearColor);
 
     renderBuffer();
-}
+};
 
 int main() {
     render();
